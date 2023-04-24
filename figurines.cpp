@@ -3,7 +3,7 @@ using namespace std;
 ifstream fin("input.txt");
 ofstream fout("output.txt");
 
-const int MAX = 1e6 + 7e5; 
+const int MAX = 1e7 + 7e5; 
 
 struct pt{
     struct Node{
