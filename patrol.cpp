@@ -16,15 +16,10 @@ int32_t main(){
     }
 
     for(int i = 0; i < n; i++) g[i].push_back(i);
-
-    
-    //fout << "ciao" << endl; 
-     
-
+ 
     vector<vector<int>> occupati(n + 3, vector<int> (421, 0));
     for(int i = 0; i < p; i++){
         int md; fin >> md; 
-        //fout << md << endl; 
 
         vector<int> v(md); 
         for(int &j: v) fin >> j; 
@@ -32,7 +27,6 @@ int32_t main(){
         for(int j = 0; j <= 420; j++) occupati[v[j % md]][j] = 1; 
     }
 
-    //fout << "ciao" << endl; 
     
     vector<vector<int>> vis(n + 1, vector<int> (421, 0)); 
     queue<array<int, 2>> pq;
@@ -57,6 +51,4 @@ int32_t main(){
     }
 
     fout << -1 << endl; 
-
-
 }
