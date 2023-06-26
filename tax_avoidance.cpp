@@ -18,8 +18,6 @@ int32_t main(){
         dist[a][b] = max(dist[a][b], (long double) (1000.0 - c) / 1000.0); 
     }
 
-    for(int i = 0; i < n; i++) dist[i][i] = 1; 
-
     array<long double, 3> ans = {0, 0, 0}; 
     ans[0] = 1;
 
