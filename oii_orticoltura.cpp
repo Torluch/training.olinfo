@@ -23,7 +23,7 @@ void irriga(int C, int N, vector<int>& X, vector<int>& P){
         auto [ordinata, y2, x2, j] = pq.top(); pq.pop();
         y2 = -y2; 
         long long y = (x1 - x2 + y1 + y2) / 2; 
-        long long x = (x1 + x2 + y1 - y2) / 2; // controlla di nuovo;
+        long long x = (x1 + x2 + y1 - y2) / 2;
 
         if(x2 <= x1) continue; 
         if(x <= x1) continue;
