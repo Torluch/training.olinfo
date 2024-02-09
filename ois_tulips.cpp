@@ -38,14 +38,10 @@ int32_t main(){
                 ans = max(ans, newdp[st.top()[2]]);
                 ans = max(ans, v[i] + dp[st.top()[2]]);
             }
-                
             
             newdp[i] = ans;
             st.push({v[i], mx, i});  
         }
-
-
-
         dp = newdp; 
     }
 
